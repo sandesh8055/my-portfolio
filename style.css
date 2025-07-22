@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#about, #links, #contact {
+  padding: 20px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.snowflake {
+  position: fixed;
+  top: -10px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 999;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 999;
+}

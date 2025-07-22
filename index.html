@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sandesh Duduskar - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<div class="snow-container"></div>
+<script>
+  const snowContainer = document.querySelector('.snow-container');
+  for (let i = 0; i < 100; i++) {
+    const snowflake = document.createElement('div');
+    snowflake.className = 'snowflake';
+    snowflake.style.left = Math.random() * 100 + 'vw';
+    snowflake.style.animationDuration = 2 + Math.random() * 3 + 's';
+    snowContainer.appendChild(snowflake);
+  }
+</script>
+<body>
+  <header>
+    <h1>Sandesh Duduskar</h1>
+    <p>Telecom | Aviation IT | Travel Lover</p>
+  </header>
+
+  <section id="about">
+    <img src="images/me.jpg" alt="My Photo" width="150" />
+    <h2>About Me</h2>
+    <p>I am passionate about aviation tech and love to explore new cultures. I’ve visited Dubai, Thailand, Japan, and more!</p>
+  </section>
+
+  <section id="links">
+    <h2>Connect with Me</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/sandesh-duduskar-6ab1a3a5/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/sandesh8055" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required /><br />
+      <input type="email" placeholder="Your Email" required /><br />
+      <textarea placeholder="Your Message"></textarea><br />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <section id="travel-gallery">
+  <h2>Travel Gallery</h2>
+  <div class="gallery">
+    <img src="images/dubai.jpg" alt="Dubai" />
+    <img src="images/thailand.jpg" alt="Thailand" />
+    <img src="images/japan.jpg" alt="Japan" />
+    <img src="images/malaysia.jpg" alt="Malaysia" />
+  </div>
+</section>
+  <footer>
+    <p>© 2025 Sandesh Duduskar</p>
+  </footer>
+  <a href="https://wa.me/919594543473" class="whatsapp-float" target="_blank">
+  💬 Chat on WhatsApp
+</a>
+</body>
+</html>

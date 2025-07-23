@@ -17,8 +17,14 @@
     snowContainer.appendChild(snowflake);
   }
 </script>
+  <script>
+  const toggleBtn = document.getElementById('toggle-theme');
+  toggleBtn.onclick = () => {
+    document.body.classList.toggle('dark');
+  };
+</script>
 <body>
-  <header>
+  <header> <button id="toggle-theme">🌙 Toggle Dark Mode</button>
     <h1>Sandesh Duduskar</h1>
     <p>Telecom | Aviation IT | Travel Lover</p>
   </header>

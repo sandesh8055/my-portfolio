@@ -108,15 +108,3 @@ footer {
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
   z-index: 999;
 }
-/* Dark mode styles */
-.dark {
-  background-color: #121212;
-  color: #eee;
-}
-
-.dark header,
-.dark footer,
-.dark .whatsapp-float {
-  background-color: #222;
-  color: #eee;
-}

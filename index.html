@@ -22,7 +22,7 @@
     <h1>Sandesh Duduskar</h1>
     <p>Telecom | Aviation IT | Travel Lover</p>
   </header>
-
+<button id="toggle-theme">🌙 Toggle Dark Mode</button>
   <section id="about">
     <img src="images/me.jpg" alt="My Photo" width="150" />
     <h2>About Me</h2>
@@ -61,5 +61,11 @@
   <a href="https://wa.me/919594543473" class="whatsapp-float" target="_blank">
   💬 Chat on WhatsApp
 </a>
+<script>
+  const toggleBtn = document.getElementById('toggle-theme');
+  toggleBtn.onclick = () => {
+    document.body.classList.toggle('dark');
+  };
+</script>
 </body>
 </html>
